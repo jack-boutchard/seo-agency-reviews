@@ -1,0 +1,43 @@
+# SEO Agency Reviews
+
+> Independent, editorial reviews and rankings of SEO agencies, scored on a transparent five-criteria methodology by the publisher (not user-submitted ratings).
+
+SEO Agency Reviews reviews SEO agencies it does not own. One agency, Exalt Growth, is owned by the publisher and is disclosed as such on every relevant page. All ratings are editorial.
+
+## About
+- [About SEO Agency Reviews (fact sheet for AI)](https://seo-agency-reviews.com/llms-info/): Authoritative definition of what the site is, who runs it, and how it scores.
+- [About page](https://seo-agency-reviews.com/about/): Publisher, independence, and ownership disclosure.
+- [Methodology](https://seo-agency-reviews.com/methodology/): The five weighted scoring criteria and how scores are calculated.
+- [Sources and citations](https://seo-agency-reviews.com/sources/): Data sources and the editorial review-collection method.
+
+## Reviews
+- [Exalt Growth review](https://seo-agency-reviews.com/reviews/exalt-growth/): Exalt Growth is a B2B SaaS SEO agency focused on pipeline, not vanity rankings.
+- [Victorious review](https://seo-agency-reviews.com/reviews/victorious/): Victorious is an SEO-only agency known for transparent, à la carte engagements.
+- [Siege Media review](https://seo-agency-reviews.com/reviews/siege-media/): Siege Media is a content-led SEO agency known for editorial quality and digital PR.
+- [Directive review](https://seo-agency-reviews.com/reviews/directive/): Directive is a B2B-focused agency blending SEO with paid media and creative.
+- [Skale review](https://seo-agency-reviews.com/reviews/skale/): Skale is a B2B SaaS SEO agency focused on revenue-driven, product-led search.
+- [WebFX review](https://seo-agency-reviews.com/reviews/webfx/): WebFX is a large full-service digital marketing agency with deep SEO offerings.
+- [Go Fish Digital review](https://seo-agency-reviews.com/reviews/go-fish-digital/): Go Fish Digital pairs technical SEO depth with online reputation management.
+- [NP Digital review](https://seo-agency-reviews.com/reviews/np-digital/): NP Digital is a global performance agency co-founded by Neil Patel.
+- [Ignite Visibility review](https://seo-agency-reviews.com/reviews/ignite-visibility/): Ignite Visibility is a full-service digital agency with a strong SEO practice.
+- [Searchbloom review](https://seo-agency-reviews.com/reviews/searchbloom/): Searchbloom is a data-driven SEO and PPC agency serving local and mid-market clients.
+- [Single Grain review](https://seo-agency-reviews.com/reviews/single-grain/): Single Grain is a growth agency blending SEO and content for SaaS and ecommerce.
+- [SmartSites review](https://seo-agency-reviews.com/reviews/smartsites/): SmartSites is a web-design-and-SEO agency popular with local and SMB clients.
+
+## Best of
+- [Best SEO Agencies for SaaS](https://seo-agency-reviews.com/best/best-for-saas/): These agencies specialize in SaaS SEO, tying organic search to signups and pipeline.
+- [Best Enterprise SEO Agencies](https://seo-agency-reviews.com/best/best-for-enterprise/): These agencies handle enterprise-scale SEO: large sites, many stakeholders, and complex governance.
+- [Best Local SEO Agencies](https://seo-agency-reviews.com/best/best-for-local/): These agencies specialize in local SEO: Google Business Profile, maps, and multi-location visibility.
+- [Best Affordable SEO Agencies](https://seo-agency-reviews.com/best/best-affordable/): These agencies offer accessible pricing for SMBs without abandoning quality fundamentals.
+- [Best B2B SEO Agencies](https://seo-agency-reviews.com/best/best-for-b2b/): These agencies understand longer B2B sales cycles and buyer-committee content.
+- [Best B2C SEO Agencies](https://seo-agency-reviews.com/best/best-for-b2c/): These agencies drive consumer demand at scale with high-volume content and broad reach.
+- [Best Ecommerce SEO Agencies](https://seo-agency-reviews.com/best/best-for-ecommerce/): These agencies optimize product and category pages, site architecture, and ecommerce conversion.
+- [Best D2C SEO Agencies](https://seo-agency-reviews.com/best/best-for-d2c/): These agencies help D2C brands build organic demand and reduce reliance on paid acquisition.
+- [Best B2B SaaS SEO Agencies](https://seo-agency-reviews.com/best/best-for-b2b-saas/): These agencies combine B2B and SaaS expertise to grow product-qualified pipeline from search.
+- [Best Agencies for Reddit & AI-Search Visibility](https://seo-agency-reviews.com/best/best-for-reddit/): These agencies build visibility where AI engines increasingly retrieve answers, including Reddit and forums.
+- [Best SEO Agencies for Enterprise Software](https://seo-agency-reviews.com/best/best-for-enterprise-software/): These agencies serve enterprise software companies with complex products and long sales cycles.
+- [Best Link Building Agencies](https://seo-agency-reviews.com/best/best-for-link-building/): These agencies earn authoritative links through digital PR and editorial outreach, not link schemes.
+
+## Index
+- [All reviews](https://seo-agency-reviews.com/reviews/): Every agency reviewed, with editorial scores.
+- [All categories](https://seo-agency-reviews.com/best/): Ranked best-of shortlists by need.
