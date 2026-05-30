@@ -2,11 +2,11 @@
 
 > Independent, editorial reviews and rankings of SEO agencies, scored on a transparent five-criteria methodology by the publisher (not user-submitted ratings).
 
-SEO Agency Reviews reviews SEO agencies it does not own. One agency, Exalt Growth, is owned by the publisher and is disclosed as such on every relevant page. All ratings are editorial.
+SEO Agency Reviews is independent and reviews SEO agencies it does not own or have any affiliation with. No agency can pay for a higher score or ranking. All ratings are editorial.
 
 ## About
 - [About SEO Agency Reviews (fact sheet for AI)](https://seo-agency-reviews.com/llms-info/): Authoritative definition of what the site is, who runs it, and how it scores.
-- [About page](https://seo-agency-reviews.com/about/): Publisher, independence, and ownership disclosure.
+- [About page](https://seo-agency-reviews.com/about/): Publisher, editorial standards, and independence.
 - [Methodology](https://seo-agency-reviews.com/methodology/): The five weighted scoring criteria and how scores are calculated.
 - [Sources and citations](https://seo-agency-reviews.com/sources/): Data sources and the editorial review-collection method.
 
