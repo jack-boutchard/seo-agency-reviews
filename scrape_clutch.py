@@ -48,10 +48,11 @@ def parse_profile(md, name=""):
         m2 = re.search(r"Overall Review Rating\s*\n+\s*([0-5](?:\.\d)?)", md)
         if m2:
             rec["rating"] = float(m2.group(1))
-    # Review-count fallback (some profiles split the count from the rating)
+    # Review-count fallback: "See all N Reviews" is the authoritative total
+    # (the "(N)" next to the rating and "based on N review" are not reliable totals).
     if rec.get("rating") and not rec.get("reviews"):
-        fm = (re.search(r"Overall Review Rating\b.{0,400}?\(\s*([\d,]+)\s*\)", md, re.S)
-              or re.search(r"\b([\d,]+)\s+reviews?\b", md[:1400]))
+        fm = (re.search(r"See all\s*([\d,]+)\s*Reviews", md)
+              or re.search(r"Overall Review Rating\b.{0,400}?\(\s*([\d,]+)\s*\)", md, re.S))
         if fm:
             rec["reviews"] = int(fm.group(1).replace(",", ""))
     # Min project size

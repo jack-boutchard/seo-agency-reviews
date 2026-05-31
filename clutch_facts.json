@@ -1,6 +1,7 @@
 {
  "Exalt Growth": {
   "rating": 5.0,
+  "reviews": 3,
   "min_project": "$1,000+",
   "hourly": "$100 - $149",
   "employees": "2 - 9",
@@ -14,8 +15,7 @@
    "Cost": 5.0,
    "Willing to Refer": 5.0
   },
-  "clutch_url": "https://clutch.co/profile/exalt-growth",
-  "reviews": 1
+  "clutch_url": "https://clutch.co/profile/exalt-growth"
  },
  "Victorious": {
   "rating": 4.8,
@@ -525,6 +525,7 @@
  },
  "Brainlabs": {
   "rating": 5.0,
+  "reviews": 1,
   "min_project": null,
   "hourly": "Undisclosed",
   "employees": "1,000 - 9,999",
@@ -686,6 +687,7 @@
  },
  "Aira": {
   "rating": 4.8,
+  "reviews": 2,
   "min_project": "$10,000+",
   "hourly": "$100 - $149",
   "employees": "10 - 49",
@@ -759,7 +761,7 @@
  },
  "Blue Array": {
   "rating": 5.0,
-  "reviews": 1,
+  "reviews": 2,
   "min_project": "$1,000+",
   "hourly": "$100 - $149",
   "employees": "10 - 49",
@@ -2728,6 +2730,7 @@
  },
  "Logical Position": {
   "rating": 4.5,
+  "reviews": 2,
   "min_project": "$1,000+",
   "hourly": "$100 - $149",
   "employees": "250 - 999",
@@ -3031,6 +3034,7 @@
  },
  "Mainstreethost": {
   "rating": 3.5,
+  "reviews": 2,
   "min_project": null,
   "hourly": "Undisclosed",
   "employees": "50 - 249",
