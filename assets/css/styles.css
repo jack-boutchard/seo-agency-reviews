@@ -192,6 +192,7 @@ th.sortable button::after { content: "⇅"; opacity: .6; font-size: .8rem; }
   border-radius: 999px; padding: .15rem .65rem; font-size: .82rem; font-weight: 600; margin: .15rem .2rem .15rem 0;
 }
 .pill.owned { background: #fff7e6; color: #8a5d00; border: 1px solid #f0d9a0; }
+.pill.prov { background: #eceff3; color: #555; border: 1px solid #d9dee6; font-weight: 600; }
 
 /* ----- Buttons ----- */
 .btn {

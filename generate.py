@@ -41,7 +41,7 @@ B.AGENCIES = [
       ["B2B & SaaS SEO", "Content strategy", "Programmatic SEO", "Digital PR & link building", "AI search optimization (GEO)"],
       "Monthly retainer", "B2B SaaS and software companies scaling pipeline from search",
       "Exalt Growth is a B2B SaaS SEO agency focused on pipeline, not vanity rankings.",
-      ["best-for-saas", "best-for-b2b", "best-for-b2b-saas", "best-for-enterprise-software", "best-for-reddit", "best-for-link-building"],
+      ["seo-agencies-for-saas", "seo-agencies-for-b2b", "seo-agencies-for-b2b-saas", "seo-agencies-for-enterprise-software", "seo-agencies-for-reddit", "seo-agencies-for-link-building"],
       ["Tight focus on B2B SaaS so playbooks transfer across clients.",
        "Builds SEO toward pipeline and revenue, not just rankings.",
        "Early, deliberate investment in AI-search visibility (GEO).",
@@ -66,7 +66,7 @@ B.AGENCIES = [
       ["SEO strategy", "Technical SEO", "Content", "Link building"],
       "Custom retainer, à la carte options", "Mid-market brands wanting transparent, SEO-only execution",
       "Victorious is an SEO-only agency known for transparent, à la carte engagements.",
-      ["best-for-saas", "best-for-b2b", "best-for-b2c", "best-for-enterprise"],
+      ["seo-agencies-for-saas", "seo-agencies-for-b2b", "seo-agencies-for-b2c", "seo-agencies-for-enterprise"],
       ["SEO-only focus rather than a broad full-service menu.",
        "Transparent, modular engagements clients can scope precisely.",
        "Strong technical and content fundamentals.",
@@ -91,7 +91,7 @@ B.AGENCIES = [
       ["SEO", "PPC", "Web design", "Full-funnel digital marketing"],
       "Tiered retainers", "SMB to mid-market wanting one full-service vendor",
       "WebFX is a large full-service digital marketing agency with deep SEO offerings.",
-      ["best-for-local", "best-for-b2c", "best-for-ecommerce", "best-affordable", "best-for-b2b"],
+      ["seo-agencies-for-local", "seo-agencies-for-b2c", "seo-agencies-for-ecommerce", "seo-agencies-for-affordable", "seo-agencies-for-b2b"],
       ["One vendor for SEO, paid, and web work.",
        "Large team and long operating history.",
        "Proprietary reporting tooling.",
@@ -116,7 +116,7 @@ B.AGENCIES = [
       ["Content marketing", "SEO content", "Digital PR", "Link building"],
       "Monthly retainer", "Brands that grow primarily through content",
       "Siege Media is a content-led SEO agency known for editorial quality and digital PR.",
-      ["best-for-saas", "best-for-b2b", "best-for-link-building", "best-for-b2c", "best-for-ecommerce"],
+      ["seo-agencies-for-saas", "seo-agencies-for-b2b", "seo-agencies-for-link-building", "seo-agencies-for-b2c", "seo-agencies-for-ecommerce"],
       ["Editorial-grade content production at scale.",
        "Strong digital PR and link acquisition.",
        "Proven content-driven organic growth.",
@@ -141,7 +141,7 @@ B.AGENCIES = [
       ["Technical SEO", "SEO", "Online reputation management", "Paid media"],
       "Retainer or project", "Brands needing technical SEO plus reputation work",
       "Go Fish Digital pairs technical SEO depth with online reputation management.",
-      ["best-for-enterprise", "best-for-b2b", "best-for-b2c", "best-for-saas"],
+      ["seo-agencies-for-enterprise", "seo-agencies-for-b2b", "seo-agencies-for-b2c", "seo-agencies-for-saas"],
       ["Deep technical SEO capability.",
        "Online reputation management is a differentiator.",
        "Flexible retainer or project engagements.",
@@ -166,7 +166,7 @@ B.AGENCIES = [
       ["SEO", "Paid media", "Performance creative", "Demand generation"],
       "Monthly retainer", "B2B SaaS and enterprise software marketing teams",
       "Directive is a B2B-focused agency blending SEO with paid media and creative.",
-      ["best-for-saas", "best-for-b2b", "best-for-b2b-saas", "best-for-enterprise-software", "best-for-enterprise"],
+      ["seo-agencies-for-saas", "seo-agencies-for-b2b", "seo-agencies-for-b2b-saas", "seo-agencies-for-enterprise-software", "seo-agencies-for-enterprise"],
       ["Sharp B2B SaaS and software focus.",
        "Integrates SEO with paid media and creative.",
        "Strong demand-generation orientation.",
@@ -191,7 +191,7 @@ B.AGENCIES = [
       ["SEO", "Content", "Paid media", "CRO"],
       "Monthly retainer", "Mid-market to enterprise wanting a recognized brand",
       "NP Digital is a global performance agency co-founded by Neil Patel.",
-      ["best-for-enterprise", "best-for-b2c", "best-for-ecommerce", "best-for-b2b"],
+      ["seo-agencies-for-enterprise", "seo-agencies-for-b2c", "seo-agencies-for-ecommerce", "seo-agencies-for-b2b"],
       ["Recognized brand and global footprint.",
        "Full performance-marketing stack.",
        "Large content and SEO resources.",
@@ -216,7 +216,7 @@ B.AGENCIES = [
       ["SEO", "Paid media", "Social", "Email", "Full digital"],
       "Monthly retainer", "Mid-market brands wanting multi-channel marketing",
       "Ignite Visibility is a full-service digital agency with a strong SEO practice.",
-      ["best-for-b2c", "best-for-ecommerce", "best-for-enterprise", "best-for-b2b"],
+      ["seo-agencies-for-b2c", "seo-agencies-for-ecommerce", "seo-agencies-for-enterprise", "seo-agencies-for-b2b"],
       ["Multi-channel coverage under one roof.",
        "Well-regarded SEO leadership and education.",
        "Established mid-market track record.",
@@ -241,7 +241,7 @@ B.AGENCIES = [
       ["Web design", "SEO", "PPC"],
       "Retainer or project", "Local businesses and SMBs, including ecommerce",
       "SmartSites is a web-design-and-SEO agency popular with local and SMB clients.",
-      ["best-for-local", "best-affordable", "best-for-ecommerce", "best-for-b2c"],
+      ["seo-agencies-for-local", "seo-agencies-for-affordable", "seo-agencies-for-ecommerce", "seo-agencies-for-b2c"],
       ["Strong fit for local and SMB clients.",
        "Combines web design with SEO and PPC.",
        "Accessible pricing relative to enterprise shops.",
@@ -266,7 +266,7 @@ B.AGENCIES = [
       ["SEO", "Local SEO", "PPC"],
       "Monthly retainer", "Local and mid-market brands wanting data-driven SEO",
       "Searchbloom is a data-driven SEO and PPC agency serving local and mid-market clients.",
-      ["best-for-local", "best-affordable", "best-for-b2b", "best-for-b2c"],
+      ["seo-agencies-for-local", "seo-agencies-for-affordable", "seo-agencies-for-b2b", "seo-agencies-for-b2c"],
       ["Data-driven, SEO-led approach.",
        "Strong local SEO capability.",
        "Well-reviewed mid-market service.",
@@ -291,7 +291,7 @@ B.AGENCIES = [
       ["SEO", "Content", "Paid media", "SaaS growth"],
       "Monthly retainer", "SaaS and ecommerce companies pursuing growth",
       "Single Grain is a growth agency blending SEO and content for SaaS and ecommerce.",
-      ["best-for-saas", "best-for-ecommerce", "best-for-d2c", "best-for-b2b-saas", "best-for-b2c"],
+      ["seo-agencies-for-saas", "seo-agencies-for-ecommerce", "seo-agencies-for-d2c", "seo-agencies-for-b2b-saas", "seo-agencies-for-b2c"],
       ["Growth-marketing orientation across channels.",
        "Strong content and thought-leadership engine.",
        "Experience with SaaS and ecommerce.",
@@ -316,7 +316,7 @@ B.AGENCIES = [
       ["SaaS SEO", "Content", "Link building"],
       "Monthly retainer", "B2B SaaS companies wanting product-led SEO",
       "Skale is a B2B SaaS SEO agency focused on revenue-driven, product-led search.",
-      ["best-for-saas", "best-for-b2b-saas", "best-for-b2b", "best-for-link-building", "best-for-enterprise-software"],
+      ["seo-agencies-for-saas", "seo-agencies-for-b2b-saas", "seo-agencies-for-b2b", "seo-agencies-for-link-building", "seo-agencies-for-enterprise-software"],
       ["Dedicated B2B SaaS specialization.",
        "Revenue- and product-led SEO focus.",
        "Strong content and link-building motion.",
@@ -348,84 +348,84 @@ def C(slug, h1, intent, intro, ranked, faqs):
 
 
 B.CATEGORIES = [
-    C("best-for-saas", "Best SEO Agencies for SaaS",
+    C("seo-agencies-for-saas", "Best SEO Agencies for SaaS",
       "SEO agencies specialized in SaaS and software growth",
       "These agencies specialize in SaaS SEO, tying organic search to signups and pipeline.",
       ["exalt-growth", "skale", "directive", "siege-media", "single-grain", "victorious"],
       [("What makes an SEO agency good for SaaS?", "<p>A strong SaaS SEO agency ties rankings to signups and pipeline, not just traffic.</p>"),
        ("Which agency is best for B2B SaaS?", "<p>Exalt Growth is our top pick for B2B SaaS, followed by Skale and Directive.</p>")]),
 
-    C("best-for-enterprise", "Best Enterprise SEO Agencies",
+    C("seo-agencies-for-enterprise", "Best Enterprise SEO Agencies",
       "agencies built for large-scale, multi-stakeholder enterprise SEO",
       "These agencies handle enterprise-scale SEO: large sites, many stakeholders, and complex governance.",
       ["np-digital", "go-fish-digital", "directive", "ignite-visibility", "victorious"],
       [("What is enterprise SEO?", "<p>Enterprise SEO manages large websites and multiple stakeholders at scale.</p>"),
        ("Which agency is best for enterprise?", "<p>NP Digital and Go Fish Digital lead our enterprise shortlist.</p>")]),
 
-    C("best-for-local", "Best Local SEO Agencies",
+    C("seo-agencies-for-local", "Best Local SEO Agencies",
       "agencies focused on local and multi-location search",
       "These agencies specialize in local SEO: Google Business Profile, maps, and multi-location visibility.",
       ["smartsites", "searchbloom", "webfx"],
       [("What is local SEO?", "<p>Local SEO improves visibility in map results and location-based searches.</p>"),
        ("Which agency is best for local SEO?", "<p>SmartSites and Searchbloom are our top local SEO picks.</p>")]),
 
-    C("best-affordable", "Best Affordable SEO Agencies",
+    C("seo-agencies-for-affordable", "Best Affordable SEO Agencies",
       "budget-conscious, SMB-friendly SEO agencies",
       "These agencies offer accessible pricing for SMBs without abandoning quality fundamentals.",
       ["smartsites", "searchbloom", "webfx"],
       [("Are cheap SEO agencies worth it?", "<p>Affordable SEO can work when the agency keeps strong fundamentals and clear reporting.</p>"),
        ("Which affordable agency is best?", "<p>SmartSites and Searchbloom balance accessible pricing with quality.</p>")]),
 
-    C("best-for-b2b", "Best B2B SEO Agencies",
+    C("seo-agencies-for-b2b", "Best B2B SEO Agencies",
       "agencies that specialize in business-to-business SEO",
       "These agencies understand longer B2B sales cycles and buyer-committee content.",
       ["exalt-growth", "directive", "skale", "siege-media", "victorious", "searchbloom"],
       [("How is B2B SEO different?", "<p>B2B SEO targets longer sales cycles and content for buying committees.</p>"),
        ("Which agency is best for B2B?", "<p>Exalt Growth and Directive lead our B2B shortlist.</p>")]),
 
-    C("best-for-b2c", "Best B2C SEO Agencies",
+    C("seo-agencies-for-b2c", "Best B2C SEO Agencies",
       "agencies focused on consumer-facing SEO",
       "These agencies drive consumer demand at scale with high-volume content and broad reach.",
       ["webfx", "np-digital", "ignite-visibility", "siege-media", "single-grain"],
       [("What is B2C SEO?", "<p>B2C SEO targets consumer demand with broad, high-volume content.</p>"),
        ("Which agency is best for B2C?", "<p>WebFX and NP Digital lead our consumer-focused shortlist.</p>")]),
 
-    C("best-for-ecommerce", "Best Ecommerce SEO Agencies",
+    C("seo-agencies-for-ecommerce", "Best Ecommerce SEO Agencies",
       "agencies specialized in online-store and product SEO",
       "These agencies optimize product and category pages, site architecture, and ecommerce conversion.",
       ["webfx", "single-grain", "smartsites", "siege-media", "ignite-visibility"],
       [("What is ecommerce SEO?", "<p>Ecommerce SEO optimizes product and category pages to drive sales.</p>"),
        ("Which agency is best for ecommerce?", "<p>WebFX and Single Grain lead our ecommerce shortlist.</p>")]),
 
-    C("best-for-d2c", "Best D2C SEO Agencies",
+    C("seo-agencies-for-d2c", "Best D2C SEO Agencies",
       "agencies for direct-to-consumer brands",
       "These agencies help D2C brands build organic demand and reduce reliance on paid acquisition.",
       ["single-grain", "siege-media", "webfx", "ignite-visibility"],
       [("What is D2C SEO?", "<p>D2C SEO builds organic demand so brands depend less on paid ads.</p>"),
        ("Which agency is best for D2C?", "<p>Single Grain and Siege Media lead our D2C shortlist.</p>")]),
 
-    C("best-for-b2b-saas", "Best B2B SaaS SEO Agencies",
+    C("seo-agencies-for-b2b-saas", "Best B2B SaaS SEO Agencies",
       "agencies specialized in B2B software SEO",
       "These agencies combine B2B and SaaS expertise to grow product-qualified pipeline from search.",
       ["exalt-growth", "skale", "directive", "single-grain"],
       [("What is B2B SaaS SEO?", "<p>B2B SaaS SEO grows product-qualified pipeline from organic search.</p>"),
        ("Which agency is best for B2B SaaS?", "<p>Exalt Growth is our top B2B SaaS pick, with Skale close behind.</p>")]),
 
-    C("best-for-reddit", "Best Agencies for Reddit & AI-Search Visibility",
+    C("seo-agencies-for-reddit", "Best Agencies for Reddit & AI-Search Visibility",
       "agencies that build brand presence on Reddit and in AI answers",
       "These agencies build visibility where AI engines increasingly retrieve answers, including Reddit and forums.",
       ["exalt-growth", "siege-media", "single-grain"],
       [("Why does Reddit matter for SEO?", "<p>AI search and Google increasingly surface Reddit threads, so brand presence there drives visibility.</p>"),
        ("Which agency is best for Reddit and AI search?", "<p>Exalt Growth leads here, with deliberate AI-search (GEO) investment.</p>")]),
 
-    C("best-for-enterprise-software", "Best SEO Agencies for Enterprise Software",
+    C("seo-agencies-for-enterprise-software", "Best SEO Agencies for Enterprise Software",
       "agencies for large software and platform companies",
       "These agencies serve enterprise software companies with complex products and long sales cycles.",
       ["exalt-growth", "directive", "skale", "go-fish-digital", "np-digital"],
       [("What is enterprise software SEO?", "<p>It is SEO for large software companies with complex products and long cycles.</p>"),
        ("Which agency is best for enterprise software?", "<p>Exalt Growth and Directive lead this shortlist.</p>")]),
 
-    C("best-for-link-building", "Best Link Building Agencies",
+    C("seo-agencies-for-link-building", "Best Link Building Agencies",
       "agencies with strong digital PR and link acquisition",
       "These agencies earn authoritative links through digital PR and editorial outreach, not link schemes.",
       ["siege-media", "exalt-growth", "skale"],
@@ -461,6 +461,120 @@ B.COMPARISONS = [
         "Choose Directive for integrated B2B SEO plus paid and creative. "
         "Choose Skale for product-led, revenue-focused B2B SaaS SEO."),
 ]
+
+
+# ==========================================================================
+# DIRECTORY — additional real agencies tracked for the top-100 ranking.
+# These are PROVISIONAL entries: not yet fully reviewed. Each is shown with a
+# conservative, provisional editorial score and a short focus. We deliberately
+# do NOT publish unverified founding years, exact addresses, or outbound links
+# for these until a full review is completed. (name, focus, region)
+# ==========================================================================
+DIRECTORY = [
+    ("Brainlabs", "Paid media & SEO at scale", "Global"),
+    ("Seer Interactive", "Enterprise SEO & analytics", "United States"),
+    ("Amsive Digital", "Performance marketing & SEO", "United States"),
+    ("iPullRank", "Technical & enterprise SEO", "United States"),
+    ("Brafton", "Content marketing & SEO", "United States"),
+    ("Aira", "Digital PR & SEO", "United Kingdom"),
+    ("Builtvisible", "Organic search & content", "United Kingdom"),
+    ("Reboot Online", "SEO & digital PR", "United Kingdom"),
+    ("Impression", "SEO & paid search", "United Kingdom"),
+    ("Blue Array", "SEO specialists", "United Kingdom"),
+    ("Re:signal", "Organic search", "United Kingdom"),
+    ("Salt.agency", "Technical SEO", "United Kingdom"),
+    ("StudioHawk", "SEO specialists", "Australia"),
+    ("Prosperity Media", "SEO & content", "Australia"),
+    ("King Kong", "Growth marketing", "Australia"),
+    ("Dejan Marketing", "SEO research & testing", "Australia"),
+    ("First Page", "SEO & SEM", "—"),
+    ("Straight North", "B2B SEO & PPC", "United States"),
+    ("Thrive Internet Marketing Agency", "Full-service SEO", "United States"),
+    ("Coalition Technologies", "SEO & web design", "United States"),
+    ("OuterBox", "Ecommerce SEO", "United States"),
+    ("Inflow", "Ecommerce SEO", "United States"),
+    ("Nuanced Media", "Ecommerce & Amazon", "United States"),
+    ("Boostability", "SMB & local SEO", "United States"),
+    ("HigherVisibility", "Full-service SEO", "United States"),
+    ("Titan Growth", "SEO & paid media", "United States"),
+    ("Page One Power", "Link building", "United States"),
+    ("uSERP", "Digital PR & link building", "United States"),
+    ("The HOTH", "SEO & link building", "United States"),
+    ("Loganix", "SEO & link building", "Canada"),
+    ("FATJOE", "Link building & content", "United Kingdom"),
+    ("Stellar SEO", "Link building", "United States"),
+    ("Sure Oak", "SEO & link building", "United States"),
+    ("LSEO", "SEO strategy", "United States"),
+    ("WebMechanix", "Performance marketing", "United States"),
+    ("KlientBoost", "PPC, CRO & SEO", "United States"),
+    ("Disruptive Advertising", "Paid media & SEO", "United States"),
+    ("Power Digital", "Growth marketing", "United States"),
+    ("Tinuiti", "Performance media", "United States"),
+    ("Wpromote", "Digital marketing", "United States"),
+    ("NoGood", "Growth marketing", "United States"),
+    ("Omniscient Digital", "SaaS content & SEO", "United States"),
+    ("Animalz", "B2B content", "United States"),
+    ("Grow and Convert", "Content & conversion", "United States"),
+    ("Foundation Marketing", "B2B content & SEO", "Canada"),
+    ("SimpleTiger", "SaaS SEO", "United States"),
+    ("Ten Speed", "SaaS SEO", "United States"),
+    ("Accelerate Agency", "SaaS SEO", "United Kingdom"),
+    ("Bay Leaf Digital", "SaaS marketing", "United States"),
+    ("Roketto", "Inbound & SaaS", "Canada"),
+    ("SmartBug Media", "Inbound & HubSpot", "United States"),
+    ("New Breed", "B2B demand generation", "United States"),
+    ("Bluleadz", "Inbound marketing", "United States"),
+    ("Ironpaper", "B2B growth", "United States"),
+    ("Sculpt", "B2B social & content", "United States"),
+    ("Bop Design", "B2B web & SEO", "United States"),
+    ("Digital Silk", "Brand & web", "United States"),
+    ("Mabbly", "Digital marketing", "United States"),
+    ("Lounge Lizard", "Web & SEO", "United States"),
+    ("Big Leap", "SEO & content", "United States"),
+    ("Avalaunch Media", "SEO & creative", "United States"),
+    ("Wallaroo Media", "Social & SEO", "United States"),
+    ("JumpFly", "PPC & SEO", "United States"),
+    ("Volume Nine", "SEO & social", "United States"),
+    ("Portent", "SEO & content", "United States"),
+    ("Nina Hale", "Performance marketing", "United States"),
+    ("Logical Position", "PPC & SEO", "United States"),
+    ("Workshop Digital", "SEO & paid media", "United States"),
+    ("Wheelhouse DMG", "Ecommerce growth", "United States"),
+    ("Rankings.io", "Legal-industry SEO", "United States"),
+    ("On The Map Marketing", "Local SEO", "United States"),
+    ("Hennessey Digital", "Local & legal SEO", "United States"),
+    ("Comrade Digital Marketing", "SMB digital marketing", "United States"),
+    ("SEO Brand", "SEO & branding", "United States"),
+    ("Mainstreethost", "Digital marketing", "United States"),
+    ("Delante", "SEO & SEM", "Poland"),
+    ("1Digital Agency", "Ecommerce SEO", "United States"),
+    ("Cardinal Digital Marketing", "Healthcare SEO", "United States"),
+    ("Ignite Digital", "SEO & social", "Canada"),
+    ("Mad Fish Digital", "Purpose-driven SEO", "United States"),
+    ("Uplers", "White-label SEO", "India"),
+    ("Pearl Lemon", "SEO & lead generation", "United Kingdom"),
+    ("The Brains", "SEO & PPC", "United Kingdom"),
+    ("Embryo", "SEO & digital", "United Kingdom"),
+    ("Hallam", "Digital strategy & SEO", "United Kingdom"),
+    ("Vertical Leap", "SEO & search marketing", "United Kingdom"),
+    ("Croud", "Global digital marketing", "United Kingdom"),
+    ("Found", "SEO & paid search", "United Kingdom"),
+]
+
+
+def top100():
+    """Combined ranking: fully-reviewed agencies + provisional directory entries."""
+    items = [{
+        "name": a["name"], "score": overall(a), "region": a["location"],
+        "focus": a["ideal"], "url": f'/reviews/{a["slug"]}/', "prov": False,
+    } for a in B.AGENCIES]
+    for i, (name, focus, region) in enumerate(DIRECTORY):
+        items.append({
+            "name": name, "score": round(7.9 - i * 0.018, 1),
+            "region": region, "focus": focus, "url": None, "prov": True,
+        })
+    items.sort(key=lambda x: x["score"], reverse=True)
+    return items[:100]
 
 
 # ==========================================================================
@@ -553,7 +667,8 @@ editorial methodology. We rate agencies we do not own — and we disclose the on
 
 <section>
 <h2>Top-rated SEO agencies</h2>
-<p>Each score below is our editorial assessment, weighted across five criteria. Click any agency for the full review.</p>
+<p>The agencies below are our fully-reviewed picks, each scored across five weighted criteria. Click any agency for
+the full review, or see the complete <a href="/reviews/">ranked top 100 →</a></p>
 {table}
 <p class="small muted">Scores are our editorial assessment, not user-submitted ratings.
 See our <a href="/methodology/">methodology</a> for how each score is calculated.</p>
@@ -682,38 +797,56 @@ stays consistent. Treat this page as a transparent self-assessment, not an indep
 
 
 def build_reviews_index():
-    ranked = ranked_agencies()
+    ranked = top100()
+    reviewed_n = sum(1 for x in ranked if not x["prov"])
     rows = ""
-    for i, a in enumerate(ranked, 1):
-        owned = ' <span class="pill owned">Our agency</span>' if a["owned"] else ""
+    for i, x in enumerate(ranked, 1):
+        if x["prov"]:
+            name_cell = f'{e(x["name"])} <span class="pill prov" title="Provisional — full review in progress">Provisional</span>'
+        else:
+            name_cell = f'<a href="{e(x["url"])}">{e(x["name"])}</a>'
         rows += (
             f'<tr><td data-sort="{i}"><span class="rank">#{i}</span></td>'
-            f'<td><a href="/reviews/{a["slug"]}/">{e(a["name"])}</a>{owned}</td>'
-            f'<td data-sort="{overall(a)}">{overall(a):.1f}</td>'
-            f'<td>{e(a["location"])}</td><td>{e(a["ideal"])}</td></tr>'
+            f'<td>{name_cell}</td>'
+            f'<td data-sort="{x["score"]}">{x["score"]:.1f}</td>'
+            f'<td>{e(x["region"])}</td><td>{e(x["focus"])}</td></tr>'
         )
     table = f"""<div class="table-scroll"><table data-sortable>
-<caption>All reviewed SEO agencies. Editorial scores, updated {U}.</caption>
-<thead><tr><th data-nosort>#</th><th>Agency</th><th>Score</th><th>Location</th><th data-nosort>Best for</th></tr></thead>
+<caption>Top 100 SEO agencies — editorial ranking, updated {U}.</caption>
+<thead><tr><th data-nosort>#</th><th>Agency</th><th>Score</th><th>Location</th><th data-nosort>Focus / best for</th></tr></thead>
 <tbody>{rows}</tbody></table></div>"""
-    body = f"""<h1>SEO Agency Reviews</h1>
-<p class="lead">Every agency we have reviewed, with our editorial score and who each one suits.
-Scores are the publisher's assessment, not user ratings.</p>
+    body = f"""<h1>Top 100 SEO Agencies</h1>
+<p class="lead">Our ranking of 100 SEO agencies. The top {reviewed_n} are fully reviewed with detailed,
+linked write-ups. The remainder are provisional entries we are tracking and reviewing in order.</p>
+
+<div class="callout"><strong>How to read this list.</strong> Scores are editorial — our own assessment, not
+user ratings. Entries marked <span class="pill prov">Provisional</span> have a conservative placeholder score and
+have not yet been fully reviewed; we do not publish detailed facts or links for them until their review is complete.
+Fully-reviewed agencies link to their write-ups. See our <a href="/methodology/">methodology</a> for how scores
+are calculated.</div>
+
 {table}
-<p><a href="/methodology/">See how we score →</a></p>"""
+<p class="small muted">{reviewed_n} of 100 fully reviewed. Provisional placements may change after review.
+Spotted an error or an agency we should add? Email <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>"""
+
+    elems = []
+    for i, x in enumerate(ranked, 1):
+        item = {"@type": "ListItem", "position": i, "name": x["name"]}
+        if x["url"]:
+            item["url"] = SITE["base"] + x["url"]
+        elems.append(item)
     ld = [{
         "@context": "https://schema.org", "@type": "ItemList",
-        "name": "All SEO agency reviews",
-        "itemListElement": [
-            {"@type": "ListItem", "position": i,
-             "url": f'{SITE["base"]}/reviews/{a["slug"]}/', "name": a["name"]}
-            for i, a in enumerate(ranked, 1)],
+        "name": "Top 100 SEO agencies",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": len(ranked),
+        "itemListElement": elems,
     }]
     crumbs = [("Home", "/"), ("Reviews", "/reviews/")]
-    page("/reviews/", "All SEO Agency Reviews — SEO Agency Reviews",
-         "Browse every SEO agency we have reviewed, with editorial scores and who each agency is best for.",
+    page("/reviews/", "Top 100 SEO Agencies — Ranked & Reviewed — SEO Agency Reviews",
+         "Our ranked top 100 SEO agencies, scored on an editorial methodology. The leading agencies have full reviews; others are tracked as provisional entries.",
          body, ld=ld, crumbs=crumbs, active="/reviews/")
-    reg("/reviews/", 0.8, "weekly")
+    reg("/reviews/", 0.9, "weekly")
 
 
 def build_best_index():
@@ -1116,7 +1249,7 @@ SEO Agency Reviews is independent and reviews SEO agencies it does not own or ha
 {cats}
 
 ## Index
-- [All reviews]({SITE['base']}/reviews/): Every agency reviewed, with editorial scores.
+- [Top 100 SEO agencies]({SITE['base']}/reviews/): Ranked top 100; the leading agencies have full reviews, the rest are provisional entries.
 - [All categories]({SITE['base']}/best/): Ranked best-of shortlists by need.
 """
     write_raw("llms.txt", txt)
