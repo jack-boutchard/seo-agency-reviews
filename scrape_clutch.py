@@ -48,6 +48,12 @@ def parse_profile(md, name=""):
         m2 = re.search(r"Overall Review Rating\s*\n+\s*([0-5](?:\.\d)?)", md)
         if m2:
             rec["rating"] = float(m2.group(1))
+    # Review-count fallback (some profiles split the count from the rating)
+    if rec.get("rating") and not rec.get("reviews"):
+        fm = (re.search(r"Overall Review Rating\b.{0,400}?\(\s*([\d,]+)\s*\)", md, re.S)
+              or re.search(r"\b([\d,]+)\s+reviews?\b", md[:1400]))
+        if fm:
+            rec["reviews"] = int(fm.group(1).replace(",", ""))
     # Min project size
     m = re.search(r"Min(?:\.| project size)[^\n]*\n+\s*(\$[\d,]+\+?)", md)
     rec["min_project"] = m.group(1) if m else None
@@ -60,11 +66,12 @@ def parse_profile(md, name=""):
     # Founded
     m = re.search(r"Founded\s*(\d{4})", md)
     rec["founded"] = m.group(1) if m else None
-    # Primary location (first under Locations)
-    m = re.search(r"Locations\s*\n+\s*([A-Z][A-Za-z .'\-]+,\s*[A-Z]{2})", md)
+    # Primary location (first under Locations); accept US state codes or country names
+    locpat = r"([A-Z][A-Za-z .'\-]+,\s*(?:[A-Z]{2}|[A-Z][A-Za-z]+(?:\s[A-Z][a-z]+)?))"
+    m = re.search(r"Locations\s*\n+\s*" + locpat, md)
     if not m:
-        m = re.search(r"\n([A-Z][A-Za-z .'\-]+,\s*[A-Z]{2})\s*\n", md[:1500])
-    rec["location"] = m.group(1).strip() if m else None
+        m = re.search(r"\n" + locpat + r"\s*\n", md[:1500])
+    rec["location"] = re.sub(r"\s+,", ",", m.group(1).strip()) if m else None
     # "What Clients Have Said" summary
     m = re.search(r"What Clients Have Said\s*\n+\s*(.+?)\n", md)
     rec["summary"] = m.group(1).strip() if m and len(m.group(1).strip()) > 40 else None
@@ -173,8 +180,38 @@ def run(only=None):
     print("DONE. facts written:", len(facts))
 
 
+def reparse():
+    """Re-parse every cached raw profile (no new scrapes) and refresh facts."""
+    facts = json.load(open(FACTS))
+    changed = 0
+    for name, rec in facts.items():
+        url = rec.get("clutch_url")
+        if not url:
+            continue
+        slug = url.rstrip("/").split("/")[-1]
+        cache = f"{RAW}/{slug}.json"
+        if not os.path.exists(cache):
+            continue
+        md = ((json.load(open(cache)).get("data") or {}).get("markdown") or "")
+        new = parse_profile(md, name)
+        new["clutch_url"] = url
+        if new != rec:
+            changed += 1
+            before = (rec.get("rating"), rec.get("reviews"), rec.get("location"))
+            after = (new.get("rating"), new.get("reviews"), new.get("location"))
+            if before != after:
+                print(f"  {name}: {before} -> {after}")
+        facts[name] = new
+    json.dump(facts, open(FACTS, "w"), indent=1, ensure_ascii=False)
+    print(f"reparsed; {changed} records changed; "
+          f"rating={sum(1 for v in facts.values() if v.get('rating'))} "
+          f"reviews={sum(1 for v in facts.values() if v.get('reviews'))}")
+
+
 if __name__ == "__main__":
-    if "--test" in sys.argv:
+    if "--reparse" in sys.argv:
+        reparse()
+    elif "--test" in sys.argv:
         md = json.load(open("clutch_data/_profile_sample.json"))["data"]["markdown"]
         print(json.dumps(parse_profile(md, "Siege Media"), indent=2, ensure_ascii=False))
     elif "--run" in sys.argv:

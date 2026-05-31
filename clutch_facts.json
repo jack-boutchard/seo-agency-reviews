@@ -1,7 +1,21 @@
 {
  "Exalt Growth": {
-  "clutch_url": null,
-  "no_profile": true
+  "rating": 5.0,
+  "min_project": "$1,000+",
+  "hourly": "$100 - $149",
+  "employees": "2 - 9",
+  "founded": "2024",
+  "location": "Sydney, Australia",
+  "summary": null,
+  "highlights": [],
+  "subratings": {
+   "Quality": 5.0,
+   "Schedule": 5.0,
+   "Cost": 5.0,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/exalt-growth",
+  "reviews": 1
  },
  "Victorious": {
   "rating": 4.8,
@@ -470,7 +484,7 @@
   "hourly": "$100 - $149",
   "employees": "50 - 249",
   "founded": "2019",
-  "location": null,
+  "location": "London, England",
   "summary": "Skale offers competitive pricing that aligns with client budgets, providing strong value for cost. Clients reported satisfaction with project deliverables and project management, highlighting effective communication and timely execution. Specific project costs and client sizes were not disclosed.",
   "common_project": "< $49,999",
   "top_mentions": [
@@ -676,7 +690,7 @@
   "hourly": "$100 - $149",
   "employees": "10 - 49",
   "founded": "2007",
-  "location": null,
+  "location": "Mumbai, India",
   "summary": "AIRA Consulting Pvt. Ltd. offers services at approximately $1,000 per month, providing significant value for smaller organizations. Clients report strong growth and effective strategy support, with engagements lasting 18 months or longer, indicating a commitment to long-term partnerships.",
   "highlights": [],
   "subratings": {
@@ -692,7 +706,7 @@
   "hourly": "$50 - $99",
   "employees": "10 - 49",
   "founded": "2009",
-  "location": null,
+  "location": "London, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/builtvisible"
@@ -704,7 +718,7 @@
   "hourly": "$150 - $199",
   "employees": "50 - 249",
   "founded": "2012",
-  "location": null,
+  "location": "Nottingham, England",
   "summary": "Impression offers competitive pricing with a focus on delivering value through effective SEO and PPC strategies. Clients report substantial ROI, including a 119% revenue increase for one client. Their flexibility and responsiveness to budget changes enhance overall satisfaction.",
   "common_project": "\\> $1,000,000",
   "top_mentions": [
@@ -745,11 +759,12 @@
  },
  "Blue Array": {
   "rating": 5.0,
+  "reviews": 1,
   "min_project": "$1,000+",
   "hourly": "$100 - $149",
   "employees": "10 - 49",
   "founded": "2015",
-  "location": null,
+  "location": "Reading, England",
   "summary": "Blue Array SEO's project costs start at approximately $12,000 for a detailed SEO review. They offer ongoing monthly support for SEO refinement, demonstrating flexibility and responsiveness, which adds value for clients seeking tailored strategies.",
   "highlights": [],
   "subratings": {
@@ -767,7 +782,7 @@
   "hourly": "$150 - $199",
   "employees": "10 - 49",
   "founded": "2012",
-  "location": null,
+  "location": "London, England",
   "summary": "Re:signal offers competitive pricing with investments around $50,000 to $100,000 for various projects. Clients report strong ROI and effective project management, indicating good value for cost, particularly in SEO and content optimization.",
   "common_project": "$50,000 - $199,999",
   "top_mentions": [
@@ -810,7 +825,7 @@
   "hourly": "$150 - $199",
   "employees": "10 - 49",
   "founded": "2014",
-  "location": null,
+  "location": "Leeds, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/saltagency"
@@ -822,7 +837,7 @@
   "hourly": "$150 - $199",
   "employees": "50 - 249",
   "founded": "2015",
-  "location": null,
+  "location": "Prahran, Australia",
   "summary": "StudioHawk SEO Agency is praised for their good value for cost and flexible team sizes (2-5 employees). Clients noted affordable pricing that fits budgets and appreciated the agency's straightforward approach without fluff, delivering significant results in SEO improvements and organic traffic.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
@@ -868,7 +883,7 @@
   "hourly": "$200 - $300",
   "employees": "10 - 49",
   "founded": "2013",
-  "location": null,
+  "location": "Surry Hills, Australia",
   "summary": "Prosperity Media offers valuable SEO services with competitive pricing, as noted by clients who appreciate their budget fit and good value for cost. Projects typically involve 2-5 team members, and deliverables are consistently on time, reflecting strong project management.",
   "common_project": "< $49,999",
   "top_mentions": [
@@ -912,7 +927,7 @@
   "hourly": "Undisclosed",
   "employees": "50 - 249",
   "founded": "2014",
-  "location": null,
+  "location": "Newport, Australia",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/kingkong"
@@ -922,7 +937,7 @@
   "hourly": "Undisclosed",
   "employees": "2 - 9",
   "founded": "2023",
-  "location": null,
+  "location": "Sandton, South Africa",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/first-page-seo-agency"
@@ -1721,6 +1736,7 @@
  },
  "Tinuiti": {
   "rating": 5.0,
+  "reviews": 1,
   "min_project": "$10,000+",
   "hourly": "$100 - $149",
   "employees": "1,000 - 9,999",
@@ -1784,6 +1800,7 @@
  },
  "NoGood": {
   "rating": 5.0,
+  "reviews": 1,
   "min_project": null,
   "hourly": "Undisclosed",
   "employees": "10 - 49",
@@ -1906,7 +1923,7 @@
   "hourly": "$200 - $300",
   "employees": "10 - 49",
   "founded": "2014",
-  "location": null,
+  "location": "Dartmouth, Canada",
   "summary": "Foundation Marketing offers good value for cost, as highlighted by clients who appreciate their pricing and effectiveness. Specific project costs include a $20,500 flat fee for foundational support and a $30,000 quarterly retainer for SEO efforts, with most clients noting their affordability and quality.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
@@ -2044,7 +2061,7 @@
   "hourly": "$150 - $199",
   "employees": "10 - 49",
   "founded": "2017",
-  "location": null,
+  "location": "Bristol, England",
   "summary": "Accelerate Agency's pricing varies, with projects costing clients between $25,000 and $275,000. Clients note high value for cost, emphasizing effective SEO and analytics services, leading to increased traffic and leads. They maintain strong communication and adaptability throughout engagements.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
@@ -2134,7 +2151,7 @@
   "hourly": "$150 - $199",
   "employees": "10 - 49",
   "founded": "2009",
-  "location": null,
+  "location": "Kelowna, Canada",
   "summary": "Roketto's project costs range from $7,500/month to $35,000 for comprehensive services. Clients noted strong value for cost, particularly in communication and deliverables, though one project faced issues with scope and budget. Overall, clients appreciated the quality and responsiveness of the team.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
@@ -3174,7 +3191,7 @@
   "hourly": "$50 - $99",
   "employees": "10 - 49",
   "founded": "2008",
-  "location": null,
+  "location": "Mississauga, Canada",
   "summary": "Ignite Digital offers competitively priced digital marketing services, with clients noting good value for cost. Many clients emphasize budget alignment and effective project management, resulting in measurable increases in web traffic and leads.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
@@ -3266,7 +3283,7 @@
   "hourly": null,
   "employees": "1,000 - 9,999",
   "founded": "2021",
-  "location": null,
+  "location": "Ahmedabad, India",
   "summary": "Uplers offers competitive pricing for digital marketing services, with project costs ranging from $1,000 to $2,500. Clients appreciate their value for money, timely delivery, and strong communication. Overall, Uplers is seen as a reliable partner that delivers quality work within budget.",
   "common_project": "< $10,000",
   "top_mentions": [
@@ -3356,7 +3373,7 @@
   "hourly": "$100 - $149",
   "employees": "10 - 49",
   "founded": "1985",
-  "location": null,
+  "location": "Surry Hills, Australia",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/brains"
@@ -3366,7 +3383,7 @@
   "hourly": "$100 - $149",
   "employees": "50 - 249",
   "founded": "2014",
-  "location": null,
+  "location": "Manchester, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/embryo"
@@ -3376,7 +3393,7 @@
   "hourly": "$100 - $149",
   "employees": "50 - 249",
   "founded": "2001",
-  "location": null,
+  "location": "Portsmouth, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/vertical-leap"
@@ -3386,7 +3403,7 @@
   "hourly": "$150 - $199",
   "employees": "250 - 999",
   "founded": "2011",
-  "location": null,
+  "location": "London, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/croud"
@@ -3397,7 +3414,7 @@
   "hourly": "$100 - $149",
   "employees": "50 - 249",
   "founded": "2005",
-  "location": null,
+  "location": "London, England",
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/found-ai-first-everysearch-agency"
@@ -3455,7 +3472,7 @@
   "hourly": "$100 - $149",
   "employees": "10 - 49",
   "founded": "2017",
-  "location": null,
+  "location": "Mooloolaba, Australia",
   "summary": "Digital Nomads HQ offers competitive pricing with project costs often confidential, but some clients report spending under $10,000 or around $25,000 AUD annually. Clients appreciate their value for cost, professionalism, and thorough communication, indicating strong ROI through increased leads and website traffic.",
   "common_project": "< $10,000",
   "top_mentions": [
@@ -3639,7 +3656,7 @@
   "hourly": "$150 - $199",
   "employees": "50 - 249",
   "founded": "2001",
-  "location": null,
+  "location": "Toronto, Canada",
   "summary": "Search Engine People's pricing is competitive, with clients reporting investments ranging from under $10,000 to around $100,000. Clients appreciate the value for cost, noting effective strategies in SEO and PPC that lead to significant traffic and lead increases.",
   "common_project": "$10,000 - $49,999",
   "top_mentions": [
