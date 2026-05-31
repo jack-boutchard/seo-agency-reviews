@@ -697,10 +697,6 @@
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/builtvisible"
  },
- "Reboot Online": {
-  "clutch_url": null,
-  "no_profile": true
- },
  "Impression": {
   "rating": 4.9,
   "reviews": 7,
@@ -920,10 +916,6 @@
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/kingkong"
- },
- "Dejan Marketing": {
-  "clutch_url": null,
-  "no_profile": true
  },
  "First Page": {
   "min_project": null,
@@ -1441,10 +1433,6 @@
   },
   "clutch_url": "https://clutch.co/profile/userp"
  },
- "The HOTH": {
-  "clutch_url": null,
-  "no_profile": true
- },
  "Loganix": {
   "min_project": null,
   "hourly": "$150 - $199",
@@ -1454,10 +1442,6 @@
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/loganix"
- },
- "FATJOE": {
-  "clutch_url": null,
-  "no_profile": true
  },
  "Stellar SEO": {
   "rating": 5.0,
@@ -1596,10 +1580,6 @@
    "Willing to Refer": 5.0
   },
   "clutch_url": "https://clutch.co/profile/lseocom"
- },
- "WebMechanix": {
-  "clutch_url": null,
-  "no_profile": true
  },
  "KlientBoost": {
   "rating": 4.9,
@@ -2729,14 +2709,6 @@
   },
   "clutch_url": "https://clutch.co/profile/volume-nine"
  },
- "Portent": {
-  "clutch_url": null,
-  "no_profile": true
- },
- "Nina Hale": {
-  "clutch_url": null,
-  "no_profile": true
- },
  "Logical Position": {
   "rating": 4.5,
   "min_project": "$1,000+",
@@ -3399,10 +3371,6 @@
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/embryo"
  },
- "Hallam": {
-  "clutch_url": null,
-  "no_profile": true
- },
  "Vertical Leap": {
   "min_project": "$1,000+",
   "hourly": "$100 - $149",
@@ -3433,5 +3401,373 @@
   "summary": null,
   "highlights": [],
   "clutch_url": "https://clutch.co/profile/found-ai-first-everysearch-agency"
+ },
+ "Jives Media": {
+  "rating": 5.0,
+  "reviews": 339,
+  "min_project": "$1,000+",
+  "hourly": "$100 - $149",
+  "employees": "10 - 49",
+  "founded": "2012",
+  "location": "San Francisco, CA",
+  "summary": "Jives Media is perceived as offering good value for cost, with many clients noting their pricing aligns with budgets. Specific project costs are not detailed, but clients report significant increases in leads and traffic, indicating strong ROI.",
+  "common_project": "$10,000 - $49,999",
+  "top_mentions": [
+   "Timely (74)",
+   "Communicative (64)",
+   "Great project management (27)",
+   "Knowledgeable (25)",
+   "Easy to work with (24)",
+   "High-quality work (23)",
+   "Experienced (18)",
+   "Detail-oriented (16)"
+  ],
+  "highlights": [
+   {
+    "title": "Positive Impact on Business Growth",
+    "text": "Jives Media's marketing efforts have had a positive impact on client business growth, leading to increased visibility, customer engagement, and revenue. Their work has been instrumental in helping clients achieve their strategic objectives."
+   },
+   {
+    "title": "Exceptional Client Support",
+    "text": "Jives Media is commended for their exceptional client support, providing guidance, expertise, and assistance throughout the project lifecycle. Clients feel supported and valued, contributing to a positive overall experience."
+   },
+   {
+    "title": "Tailored Strategies for Diverse Clients",
+    "text": "Jives Media excels in creating tailored marketing strategies for a diverse range of clients, from small businesses to large enterprises. Their ability to adapt and customize their approach ensures that each client receives the most effective solutions for their unique needs."
+   },
+   {
+    "title": "Comprehensive Service Offering",
+    "text": "Jives Media offers a comprehensive range of services, from SEO and PPC to web design and content creation. Clients value the convenience of having all their digital marketing needs met by a single, capable provider."
+   }
+  ],
+  "subratings": {
+   "Quality": 5.0,
+   "Schedule": 5.0,
+   "Cost": 5.0,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/jives-media"
+ },
+ "Digital Nomads HQ": {
+  "rating": 4.9,
+  "reviews": 72,
+  "min_project": "$1,000+",
+  "hourly": "$100 - $149",
+  "employees": "10 - 49",
+  "founded": "2017",
+  "location": null,
+  "summary": "Digital Nomads HQ offers competitive pricing with project costs often confidential, but some clients report spending under $10,000 or around $25,000 AUD annually. Clients appreciate their value for cost, professionalism, and thorough communication, indicating strong ROI through increased leads and website traffic.",
+  "common_project": "< $10,000",
+  "top_mentions": [
+   "Timely (31)",
+   "Communicative (18)",
+   "Professional (12)",
+   "Helpful (9)",
+   "Easy to work with (8)",
+   "Personable (8)",
+   "Knowledgeable (7)",
+   "Detail-oriented (6)"
+  ],
+  "highlights": [
+   {
+    "title": "Effective SEO and PPC Strategies",
+    "text": "Clients report significant improvements in organic traffic and search engine rankings, as well as reduced customer acquisition costs due to Digital Nomads HQ's SEO and PPC campaigns. Their strategic approach results in better online visibility and lead generation."
+   },
+   {
+    "title": "Proactive and Collaborative Team",
+    "text": "The team at Digital Nomads HQ is noted for being proactive and collaborative, often providing insightful recommendations and working closely with clients to achieve the best outcomes. Their commitment to partnership is highly valued."
+   },
+   {
+    "title": "Responsive Project Management",
+    "text": "Digital Nomads HQ is commended for their responsive and timely project management. They maintain clear communication, deliver on time, and are attentive to client needs, ensuring a smooth and stress-free experience."
+   },
+   {
+    "title": "Room for Improvement in Communication",
+    "text": "While generally praised for their communication, some clients noted areas for improvement, particularly in early-stage communication and clarity regarding project updates. Addressing these could enhance the client experience further."
+   }
+  ],
+  "subratings": {
+   "Quality": 4.9,
+   "Schedule": 4.9,
+   "Cost": 4.9,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/digital-nomads-hq"
+ },
+ "Outpace SEO": {
+  "rating": 5.0,
+  "reviews": 112,
+  "min_project": "$1,000+",
+  "hourly": "$150 - $199",
+  "employees": "10 - 49",
+  "founded": "2013",
+  "location": "Oklahoma City, OK",
+  "summary": "Outpace SEO is recognized for delivering good value for cost with consistent results across various projects. Clients report substantial increases in organic traffic and lead generation, often attributing this to effective SEO strategies and proactive communication. Specific pricing details are generally not disclosed.",
+  "common_project": "$50,000 - $199,999",
+  "top_mentions": [
+   "Timely (58)",
+   "Communicative (34)",
+   "Proactive (29)",
+   "Well-organized projects (20)",
+   "Great project management (15)",
+   "Professional (15)",
+   "Results-oriented (12)",
+   "Detail-oriented (11)"
+  ],
+  "highlights": [
+   {
+    "title": "Strong SEO Expertise",
+    "text": "Outpace SEO is consistently praised for their deep understanding of SEO strategies and their ability to deliver measurable results, such as improved organic rankings and increased traffic. Clients appreciate their technical expertise and strategic approach that drives long-term growth."
+   },
+   {
+    "title": "Results-Driven Approach",
+    "text": "Outpace SEO is commended for their results-driven approach, focusing on generating ROI for clients. Their strategic efforts in optimizing search engine visibility have consistently led to improved rankings and business outcomes."
+   },
+   {
+    "title": "High-Quality Content Creation",
+    "text": "Outpace's emphasis on creating high-quality, SEO-focused content is frequently highlighted as a key factor in their success. This content strategy helps improve search rankings and engage target audiences effectively."
+   },
+   {
+    "title": "Strong Industry Knowledge",
+    "text": "Outpace SEO is praised for their deep industry knowledge and ability to stay current with SEO trends and algorithm updates. This expertise ensures that their strategies remain effective and aligned with best practices."
+   }
+  ],
+  "subratings": {
+   "Quality": 5.0,
+   "Schedule": 5.0,
+   "Cost": 5.0,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/outpace-seo"
+ },
+ "Funnel Boost Media": {
+  "rating": 4.9,
+  "reviews": 113,
+  "min_project": "$1,000+",
+  "hourly": "$50 - $99",
+  "employees": "50 - 249",
+  "founded": "2012",
+  "location": "San Antonio, TX",
+  "summary": "Funnel Boost Media offers competitive pricing with significant value, as evidenced by clients reporting costs ranging from $1,200 to $150,000 for various services. Clients consistently highlight excellent communication, timely delivery, and effective project management, often resulting in improved web presence and lead generation.",
+  "common_project": "$10,000 - $49,999",
+  "top_mentions": [
+   "Timely (35)",
+   "Communicative (19)",
+   "Professional (17)",
+   "Great project management (15)",
+   "Easy to work with (10)",
+   "Helpful (10)",
+   "Accommodating (8)",
+   "Knowledgeable (8)"
+  ],
+  "highlights": [
+   {
+    "title": "Strong Web Development Skills",
+    "text": "Clients consistently praised Funnel Boost Media for their web development capabilities, delivering professional and visually appealing websites that align with clients' visions. They have a good track record of creating custom websites that meet specific client needs."
+   },
+   {
+    "title": "Issues with Black Hat SEO Tactics",
+    "text": "One client reported negative experiences with Funnel Boost Media regarding the use of black hat SEO tactics and inadequate improvements in keyword rankings and organic traffic. They expressed dissatisfaction with the engagement."
+   },
+   {
+    "title": "Effective SEO Services",
+    "text": "Funnel Boost Media has been successful in improving clients' SEO rankings and increasing traffic. Many clients reported achieving first-page rankings and a significant boost in website visibility, showcasing their expertise in SEO strategies."
+   },
+   {
+    "title": "Responsive and Professional Communication",
+    "text": "Clients commend Funnel Boost Media for their responsiveness and professionalism. Their team is noted for being available, addressing client concerns promptly, and maintaining clear communication throughout projects."
+   }
+  ],
+  "subratings": {
+   "Quality": 4.9,
+   "Schedule": 4.9,
+   "Cost": 4.8,
+   "Willing to Refer": 4.9
+  },
+  "clutch_url": "https://clutch.co/profile/funnel-boost-media"
+ },
+ "HawkSEM": {
+  "rating": 4.9,
+  "reviews": 33,
+  "min_project": "$1,000+",
+  "hourly": "$100 - $149",
+  "employees": "50 - 249",
+  "founded": "2006",
+  "location": "Los Angeles, CA",
+  "summary": "HawkSEM offers competitive pricing that aligns with various client budgets, delivering strong ROI through effective SEO and SEM strategies. Clients praise their responsiveness and project management. Specific project costs and client sizes vary, but overall, clients perceive high value for their investment.",
+  "common_project": "$10,000 - $49,999",
+  "top_mentions": [
+   "Timely (14)",
+   "Knowledgeable (7)",
+   "Great project management (5)",
+   "Unique expertise (5)",
+   "Communicative (4)",
+   "Proactive (4)",
+   "Team players (4)",
+   "Professional (3)"
+  ],
+  "highlights": [
+   {
+    "title": "Commitment to Long-term Partnerships",
+    "text": "HawkSEM is recognized for fostering long-term client relationships. Their commitment to understanding and aligning with client goals supports sustained collaboration and mutual success."
+   },
+   {
+    "title": "High Client Satisfaction Despite Initial Challenges",
+    "text": "Even when facing initial challenges, HawkSEM has demonstrated a commitment to resolving issues and improving client satisfaction. Their willingness to address and rectify concerns showcases their dedication to client success."
+   },
+   {
+    "title": "Impressive Client Results",
+    "text": "Clients have reported impressive results, including increased revenue, lead generation, and traffic improvements. HawkSEM's efforts have contributed to tangible business growth, enhancing their reputation as a results-oriented agency."
+   },
+   {
+    "title": "Highly Recommended by Clients",
+    "text": "Clients frequently recommend HawkSEM for their technical expertise, effective strategies, and positive impact on business metrics. Their reputation as a reliable and skilled agency is reinforced by client endorsements."
+   }
+  ],
+  "subratings": {
+   "Quality": 4.9,
+   "Schedule": 5.0,
+   "Cost": 4.7,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/hawksem"
+ },
+ "Search Engine People": {
+  "rating": 4.9,
+  "reviews": 55,
+  "min_project": "$1,000+",
+  "hourly": "$150 - $199",
+  "employees": "50 - 249",
+  "founded": "2001",
+  "location": null,
+  "summary": "Search Engine People's pricing is competitive, with clients reporting investments ranging from under $10,000 to around $100,000. Clients appreciate the value for cost, noting effective strategies in SEO and PPC that lead to significant traffic and lead increases.",
+  "common_project": "$10,000 - $49,999",
+  "top_mentions": [
+   "Timely (20)",
+   "Communicative (13)",
+   "Knowledgeable (12)",
+   "Professional (12)",
+   "Results-oriented (7)",
+   "Helpful (6)",
+   "Proactive (6)",
+   "Great project management (5)"
+  ],
+  "highlights": [
+   {
+    "title": "Impressive Culture and Team Dynamics",
+    "text": "Clients frequently mention the impressive culture and team dynamics at Search Engine People. The company's values and culture align well with clients, fostering a positive working relationship and enhancing the overall partnership experience."
+   },
+   {
+    "title": "Room for Improvement in Communication",
+    "text": "While generally praised, some clients noted that there could be more proactive communication, particularly in providing forward-looking strategies and detailed reporting. Enhancing these aspects could further improve client satisfaction."
+   },
+   {
+    "title": "Impressive Results in Competitive Industries",
+    "text": "Search Engine People has demonstrated the ability to deliver impressive results in highly competitive industries, achieving top rankings and increased brand visibility for clients. Their strategic approach and industry expertise are key contributors to these successes."
+   },
+   {
+    "title": "Proactive and Knowledgeable Team",
+    "text": "The team at Search Engine People is recognized for their proactive nature and extensive knowledge in SEO and PPC. They are quick to respond to inquiries, offer strategic guidance, and adapt to changing client needs, which contributes to successful outcomes."
+   }
+  ],
+  "subratings": {
+   "Quality": 4.8,
+   "Schedule": 4.9,
+   "Cost": 4.7,
+   "Willing to Refer": 4.9
+  },
+  "clutch_url": "https://clutch.co/profile/search-engine-people"
+ },
+ "Netrocket": {
+  "rating": 5.0,
+  "reviews": 72,
+  "min_project": "$1,000+",
+  "hourly": "$50 - $99",
+  "employees": "10 - 49",
+  "founded": "2011",
+  "location": "Miami, FL",
+  "summary": "Netrocket offers good value for cost with project investments ranging from $5,000 to $25,000. Clients report significant improvements in organic traffic and lead generation, with many highlighting effective communication and timely delivery of services.",
+  "common_project": "$10,000 - $49,999",
+  "top_mentions": [
+   "Communicative (26)",
+   "Timely (11)",
+   "Professional (9)",
+   "Unique expertise (9)",
+   "Great project management (8)",
+   "Knowledgeable (7)",
+   "High-quality work (6)",
+   "Accessible (4)"
+  ],
+  "highlights": [
+   {
+    "title": "Effective Project Management",
+    "text": "Clients praised Netrocket's project management skills, noting their ability to deliver tasks on time and maintain clear, consistent communication. They were responsive to client needs, providing regular updates and actionable insights."
+   },
+   {
+    "title": "Room for Service Expansion",
+    "text": "Some clients suggested that Netrocket could expand their range of services to provide even more comprehensive solutions. This indicates potential for growth and diversification in their service offerings."
+   },
+   {
+    "title": "Strong SEO Expertise",
+    "text": "Netrocket consistently demonstrated strong SEO expertise across various projects, including keyword research, on-page and off-page optimization, and technical audits. Their efforts resulted in significant improvements in organic traffic, keyword rankings, and conversion rates for their clients."
+   },
+   {
+    "title": "Positive Client Relationships",
+    "text": "Netrocket maintained positive and open relationships with clients, characterized by transparency and mutual respect. This contributed to the success of their collaborations and client satisfaction."
+   }
+  ],
+  "subratings": {
+   "Quality": 5.0,
+   "Schedule": 5.0,
+   "Cost": 5.0,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/netrocket"
+ },
+ "LawRank": {
+  "rating": 5.0,
+  "reviews": 27,
+  "min_project": "$1,000+",
+  "hourly": "Undisclosed",
+  "employees": "50 - 249",
+  "founded": "2014",
+  "location": "Los Angeles, CA",
+  "summary": "LawRank offers competitive pricing with projects averaging between $7,500 to $120,000 in total investment. Clients appreciate the value for cost, citing high-quality work and effective communication, often resulting in significant increases in leads and search rankings.",
+  "common_project": "$50,000 - $199,999",
+  "top_mentions": [
+   "Timely (7)",
+   "Communicative (5)",
+   "High-quality work (5)",
+   "Personable (4)",
+   "Easy to work with (3)",
+   "Honest (3)",
+   "Knowledgeable (3)",
+   "Trustworthy (3)"
+  ],
+  "highlights": [
+   {
+    "title": "Professionalism and Integrity",
+    "text": "Clients commend LawRank for their professionalism and integrity. The team is described as honest and straightforward, building trust and fostering long-term partnerships with their clients."
+   },
+   {
+    "title": "Positive Long-term Relationships",
+    "text": "Many clients have maintained ongoing partnerships with LawRank, highlighting the firm's ability to sustain performance and deliver consistent results over time. This indicates strong client retention and satisfaction."
+   },
+   {
+    "title": "High Value for Cost",
+    "text": "LawRank is recognized for providing good value for the cost. Clients appreciate the high-quality results and strategic insights offered at competitive pricing, contributing to their decision to choose LawRank over other options."
+   },
+   {
+    "title": "Room for Improvement in Detail Orientation",
+    "text": "While generally praised, some clients note minor errors and suggest that more attention to detail could enhance the quality of work. This feedback indicates an area for potential improvement."
+   }
+  ],
+  "subratings": {
+   "Quality": 5.0,
+   "Schedule": 5.0,
+   "Cost": 5.0,
+   "Willing to Refer": 5.0
+  },
+  "clutch_url": "https://clutch.co/profile/lawrank"
  }
 }
