@@ -152,6 +152,23 @@ th.sortable button::after { content: "⇅"; opacity: .6; font-size: .8rem; }
 }
 .disclosure strong { color: #8a5d00; }
 
+/* ----- Clutch (attributed third-party data) ----- */
+.clutch {
+  border: 1px solid var(--line); border-left: 6px solid #17313b;
+  background: #f4f8fa; border-radius: var(--radius); padding: 1rem 1.2rem; margin: 1.25rem 0;
+}
+.clutch h2, .clutch h3 { margin-top: 0; }
+.clutch .src { font-size: .82rem; color: var(--ink-soft); }
+.clutch .stars {
+  display: inline-flex; align-items: baseline; gap: .4rem; font-weight: 800; color: var(--navy);
+}
+.clutch .stars b { font-size: 1.5rem; }
+.clutch .stars .max { color: var(--ink-soft); font-weight: 600; font-size: .95rem; }
+.clutch .subs { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; padding: 0; list-style: none; }
+.clutch .subs li { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: .15rem .6rem; font-size: .85rem; }
+.clutch .mentions { display: flex; flex-wrap: wrap; gap: .35rem; padding: 0; list-style: none; margin: .5rem 0 0; }
+.clutch .mentions li { background: var(--sky); color: var(--navy); border-radius: 999px; padding: .15rem .6rem; font-size: .82rem; }
+
 /* ----- Rating ----- */
 .score-badge {
   display: inline-flex; align-items: baseline; gap: .35rem;

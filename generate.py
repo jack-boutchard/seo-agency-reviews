@@ -9,12 +9,83 @@ No user-submitted ratings, review counts, or testimonials are used anywhere.
 Factual fields (founded, location) are drawn from public company sources and
 may change; corrections are welcomed at the contact address.
 """
+import json
+import os
+import re
 import build as B
 from build import (
     SITE, CRITERIA, e, overall, page, faq_html, faq_ld, score_table, write_raw,
 )
 
 U = SITE["updated"]
+
+# Third-party data scraped from Clutch (clutch.co), keyed by our agency name.
+# Shown attributed as cited context — NEVER marked up as our own aggregateRating.
+CLUTCH = json.load(open("clutch_facts.json")) if os.path.exists("clutch_facts.json") else {}
+
+
+def slugify(s):
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
+
+
+def cdata(name):
+    """Return the Clutch record for an agency, or {} if none usable."""
+    c = CLUTCH.get(name) or {}
+    return c if (c.get("rating") or c.get("founded") or c.get("summary")) else {}
+
+
+def crating(name):
+    r = (CLUTCH.get(name) or {}).get("rating")
+    return r if r and r > 0 else None
+
+
+def clutch_block(name, heading="What clients say on Clutch"):
+    """Attributed third-party data box. Returns '' if no usable Clutch data."""
+    c = cdata(name)
+    if not c:
+        return ""
+    url = c.get("clutch_url")
+    parts = []
+    r = crating(name)
+    if r:
+        rev = c.get("reviews")
+        revtxt = f' <span class="max">from {rev} review{"s" if rev != 1 else ""}</span>' if rev else ""
+        parts.append(f'<p class="stars"><b>{r:.1f}</b><span class="max">/ 5 on Clutch</span>{revtxt}</p>')
+    subs = c.get("subratings") or {}
+    if subs:
+        parts.append('<ul class="subs">' + "".join(
+            f"<li>{e(k)}: {v:.1f}</li>" for k, v in subs.items()) + "</ul>")
+    if c.get("summary"):
+        parts.append(f"<p>{e(c['summary'])}</p>")
+    hi = c.get("highlights") or []
+    if hi:
+        parts.append("<ul>" + "".join(
+            f"<li><strong>{e(h['title'])}.</strong> {e(h['text'])}</li>" for h in hi[:4]) + "</ul>")
+    mentions = c.get("top_mentions") or []
+    if mentions:
+        parts.append('<p class="src">Most-mentioned by clients:</p><ul class="mentions">' + "".join(
+            f"<li>{e(m)}</li>" for m in mentions[:8]) + "</ul>")
+    srcline = ('Source: <a href="%s" rel="nofollow noopener" target="_blank">Clutch</a>, a third-party B2B '
+               'review platform. Ratings are submitted by the agency\'s clients, not by this site.' % e(url)) \
+        if url else "Source: Clutch, a third-party B2B review platform (client-submitted ratings)."
+    return (f'<section class="clutch"><h2>{e(heading)}</h2>' + "".join(parts) +
+            f'<p class="src">{srcline}</p></section>')
+
+
+def clutch_facts_rows(name):
+    """Fast-facts rows derived from Clutch, for promoted directory reviews."""
+    c = cdata(name)
+    rows = []
+    if c.get("min_project") or c.get("hourly"):
+        price = " · ".join(x for x in [c.get("min_project"), c.get("hourly")] if x)
+        rows.append(("Pricing (Clutch)", price))
+    if c.get("employees"):
+        rows.append(("Team size", c["employees"] + " employees"))
+    if c.get("founded"):
+        rows.append(("Founded", c["founded"]))
+    if c.get("location"):
+        rows.append(("Location", c["location"]))
+    return rows
 
 
 def A(slug, name, url, founded, location, services, pricing, ideal, blurb,
@@ -563,18 +634,95 @@ DIRECTORY = [
 
 
 def top100():
-    """Combined ranking: fully-reviewed agencies + provisional directory entries."""
+    """Combined ranking: fully-reviewed agencies + provisional directory entries.
+    Provisional entries are ordered by their Clutch standing (rating, then review
+    count); unknowns fall to the bottom. Each carries attributed Clutch data."""
     items = [{
         "name": a["name"], "score": overall(a), "region": a["location"],
         "focus": a["ideal"], "url": f'/reviews/{a["slug"]}/', "prov": False,
+        "crating": crating(a["name"]), "creviews": (CLUTCH.get(a["name"]) or {}).get("reviews"),
+        "curl": (CLUTCH.get(a["name"]) or {}).get("clutch_url"),
     } for a in B.AGENCIES]
-    for i, (name, focus, region) in enumerate(DIRECTORY):
+
+    dir_entries = [(name, focus, region, CLUTCH.get(name) or {}) for name, focus, region in DIRECTORY]
+    dir_entries.sort(key=lambda t: ((t[3].get("rating") or 0), (t[3].get("reviews") or 0)), reverse=True)
+    for i, (name, focus, region, c) in enumerate(dir_entries):
+        has_page = bool(cdata(name))
         items.append({
             "name": name, "score": round(7.9 - i * 0.018, 1),
-            "region": region, "focus": focus, "url": None, "prov": True,
+            "region": (c.get("location") or region), "focus": focus,
+            "url": f"/reviews/{slugify(name)}/" if has_page else None, "prov": True,
+            "crating": crating(name), "creviews": c.get("reviews"), "curl": c.get("clutch_url"),
         })
     items.sort(key=lambda x: x["score"], reverse=True)
     return items[:100]
+
+
+def build_directory_review(name, focus, region, score):
+    """Promote a provisional directory agency to a full review page, sourced
+    from attributed Clutch data plus our provisional editorial score."""
+    c = cdata(name)
+    slug = slugify(name)
+    loc = c.get("location") or (region if region and region != "—" else None)
+    lead = f"{name} is a {focus[0].lower() + focus[1:]} agency" + (f" based in {loc}." if loc else ".")
+    prov_note = ('<div class="callout"><strong>Provisional review.</strong> We have not yet completed our full '
+                 'five-criteria editorial assessment of %s. This page summarises third-party data and verified '
+                 'client feedback from Clutch, alongside our provisional editorial score. '
+                 '<a href="/methodology/">How we score →</a></div>') % e(name)
+    score_badge = (f'<p><span class="score-badge"><b>{score:.1f}</b>/ 10</span> '
+                   f'<span class="small muted">Provisional editorial score · revised after full review</span></p>'
+                   if score else "")
+    rows = [("Focus", focus)] + clutch_facts_rows(name)
+    if c.get("clutch_url"):
+        rows.append(("Clutch profile", f'<a href="{e(c["clutch_url"])}" rel="nofollow noopener" target="_blank">View on Clutch</a>'))
+    facts = "".join(
+        f'<tr><th scope="row">{e(k)}</th><td>{v if k == "Clutch profile" else e(v)}</td></tr>'
+        for k, v in rows)
+    facts_table = f'<div class="table-scroll"><table class="facts"><caption>Fast facts</caption><tbody>{facts}</tbody></table></div>'
+
+    faqs = []
+    if loc:
+        faqs.append((f"Where is {name} based?", f"<p>{e(name)} is based in {e(loc)}.</p>"))
+    price = " · ".join(x for x in [c.get("min_project"), c.get("hourly")] if x)
+    if price:
+        faqs.append((f"How much does {name} cost?",
+                     f"<p>On Clutch, {e(name)} lists {e(price)}. Actual pricing depends on scope.</p>"))
+    if crating(name):
+        rev = c.get("reviews")
+        faqs.append((f"Is {name} well rated?",
+                     f"<p>{e(name)} holds {crating(name):.1f} out of 5 on Clutch"
+                     f"{f' across {rev} client reviews' if rev else ''}. Clutch ratings are submitted by clients, "
+                     f"not by this site.</p>"))
+
+    body = f"""<h1>{e(name)} Review</h1>
+<p class="lead">{e(lead)}</p>
+<p><span class="pill prov">Provisional</span> <span class="pill">{e(focus)}</span></p>
+{prov_note}
+{score_badge}
+<section><h2>Fast facts</h2>{facts_table}</section>
+{clutch_block(name)}
+{faq_html(faqs)}
+<section><h2>More</h2><p><a href="/reviews/">← Back to the top 100 SEO agencies</a></p></section>"""
+
+    org = {"@type": "Organization", "name": name}
+    if c.get("clutch_url"):
+        org["sameAs"] = c["clutch_url"]
+    review = {
+        "@context": "https://schema.org", "@type": "Review", "itemReviewed": org,
+        "author": {"@type": "Organization", "name": SITE["publisher"], "url": SITE["base"] + "/"},
+        "name": f"{name} review (provisional)", "datePublished": U,
+    }
+    if score:
+        review["reviewRating"] = {"@type": "Rating", "ratingValue": score, "bestRating": 10, "worstRating": 0}
+    ld = [review]
+    if faqs:
+        ld.append(faq_ld(faqs))
+    crumbs = [("Home", "/"), ("Reviews", "/reviews/"), (name, f"/reviews/{slug}/")]
+    desc = (f"{name} review: {focus.lower()} agency" + (f" in {loc}" if loc else "") +
+            ". Provisional editorial score plus Clutch rating and client feedback.")
+    page(f"/reviews/{slug}/", f"{name} Review — SEO Agency Reviews", desc[:155],
+         body, ld=ld, crumbs=crumbs, active="/reviews/")
+    reg(f"/reviews/{slug}/", 0.6, "monthly")
 
 
 # ==========================================================================
@@ -766,6 +914,7 @@ stays consistent. Treat this page as a transparent self-assessment, not an indep
 <p class="small muted">{rating_basis}</p></section>
 <h2 id="analysis">Detailed analysis by criterion</h2>
 {analysis}
+{clutch_block(a["name"])}
 {faq_html(a["faqs"])}
 <section><h2>Related</h2>
 <div class="grid cols-2">
@@ -799,35 +948,49 @@ stays consistent. Treat this page as a transparent self-assessment, not an indep
 def build_reviews_index():
     ranked = top100()
     reviewed_n = sum(1 for x in ranked if not x["prov"])
+    paged = sum(1 for x in ranked if x["url"])
+    with_clutch = sum(1 for x in ranked if x.get("crating"))
     rows = ""
     for i, x in enumerate(ranked, 1):
-        if x["prov"]:
-            name_cell = f'{e(x["name"])} <span class="pill prov" title="Provisional — full review in progress">Provisional</span>'
+        prov_badge = ' <span class="pill prov" title="Provisional — full editorial review pending">Provisional</span>' if x["prov"] else ""
+        if x["url"]:
+            name_cell = f'<a href="{e(x["url"])}">{e(x["name"])}</a>{prov_badge}'
         else:
-            name_cell = f'<a href="{e(x["url"])}">{e(x["name"])}</a>'
+            name_cell = f'{e(x["name"])}{prov_badge}'
+        if x.get("crating"):
+            rev = f' <span class="muted">({x["creviews"]})</span>' if x.get("creviews") else ""
+            cl = f'{x["crating"]:.1f}★{rev}'
+            cl = f'<a href="{e(x["curl"])}" rel="nofollow noopener" target="_blank">{cl}</a>' if x.get("curl") else cl
+            csort = x["crating"]
+        else:
+            cl, csort = '<span class="muted">—</span>', 0
         rows += (
             f'<tr><td data-sort="{i}"><span class="rank">#{i}</span></td>'
             f'<td>{name_cell}</td>'
             f'<td data-sort="{x["score"]}">{x["score"]:.1f}</td>'
+            f'<td data-sort="{csort}">{cl}</td>'
             f'<td>{e(x["region"])}</td><td>{e(x["focus"])}</td></tr>'
         )
     table = f"""<div class="table-scroll"><table data-sortable>
-<caption>Top 100 SEO agencies — editorial ranking, updated {U}.</caption>
-<thead><tr><th data-nosort>#</th><th>Agency</th><th>Score</th><th>Location</th><th data-nosort>Focus / best for</th></tr></thead>
+<caption>Top 100 SEO agencies — editorial ranking with attributed Clutch ratings, updated {U}.</caption>
+<thead><tr><th data-nosort>#</th><th>Agency</th><th>Our score</th><th>Clutch</th><th>Location</th><th data-nosort>Focus / best for</th></tr></thead>
 <tbody>{rows}</tbody></table></div>"""
     body = f"""<h1>Top 100 SEO Agencies</h1>
-<p class="lead">Our ranking of 100 SEO agencies. The top {reviewed_n} are fully reviewed with detailed,
-linked write-ups. The remainder are provisional entries we are tracking and reviewing in order.</p>
+<p class="lead">Our ranking of 100 SEO agencies, each scored on our editorial methodology and shown next to its
+third-party Clutch rating. The top {reviewed_n} have full, detailed reviews; the rest are provisional entries with
+Clutch-sourced profiles, reviewed in order.</p>
 
-<div class="callout"><strong>How to read this list.</strong> Scores are editorial — our own assessment, not
-user ratings. Entries marked <span class="pill prov">Provisional</span> have a conservative placeholder score and
-have not yet been fully reviewed; we do not publish detailed facts or links for them until their review is complete.
-Fully-reviewed agencies link to their write-ups. See our <a href="/methodology/">methodology</a> for how scores
-are calculated.</div>
+<div class="callout"><strong>How to read this list.</strong> The <strong>Our score</strong> column is editorial —
+our own 0–10 assessment, not a user rating. The <strong>Clutch</strong> column shows each agency's star rating and
+review count on <a href="https://clutch.co/" rel="nofollow noopener" target="_blank">Clutch</a>, a third-party
+platform where ratings are submitted by the agency's clients; we display it as cited context, not as our own rating.
+Entries marked <span class="pill prov">Provisional</span> have a placeholder editorial score pending our full
+five-criteria review. See our <a href="/methodology/">methodology</a> and <a href="/sources/">sources</a>.</div>
 
 {table}
-<p class="small muted">{reviewed_n} of 100 fully reviewed. Provisional placements may change after review.
-Spotted an error or an agency we should add? Email <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>"""
+<p class="small muted">{reviewed_n} of 100 fully reviewed · {paged} with detailed pages · {with_clutch} with a
+Clutch rating. Provisional placements may change after review. Spotted an error or an agency we should add?
+Email <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>"""
 
     elems = []
     for i, x in enumerate(ranked, 1):
@@ -1005,6 +1168,14 @@ weighted overall score out of 10. The same formula applies to every agency, incl
 </ul>
 <p>See our <a href="/sources/">sources and citations</a> for the specific inputs we rely on.</p></section>
 
+<section><h2>Our editorial score vs. third-party Clutch ratings</h2>
+<p>Two different numbers can appear on an agency page, and we keep them separate. Our <strong>editorial score</strong>
+is a 0–10 figure we assign using the five weighted criteria above; it is our opinion, not a user rating. The
+<strong>Clutch rating</strong> is a separate star rating out of 5, submitted by that agency's own clients on the
+third-party platform <a href="https://clutch.co/" rel="nofollow noopener" target="_blank">Clutch</a>. We display
+Clutch figures as clearly attributed context so readers can weigh client sentiment alongside our assessment. We never
+present Clutch ratings as our own, and we never encode them as this site's structured-data rating.</p></section>
+
 <section><h2>Editorial independence</h2>
 <p>SEO Agency Reviews is an independent publisher. We are not owned by, or affiliated with, any agency we review,
 and we do not accept payment from agencies in exchange for higher scores or better rankings. Every agency is scored
@@ -1126,6 +1297,7 @@ def build_sources():
         ("Published case studies", "Outcome claims and client results published by the agency.", "Weighted under the results and case-studies criterion, with attention to evidence quality."),
         ("Agency reporting and service documentation", "How agencies report results and structure engagements.", "Used to assess transparency, value, and support."),
         ("Search and AI-retrieval observation", "How agencies and their content appear in search and AI answers.", "Used to assess visibility and AI-search readiness where relevant."),
+        ("Clutch (clutch.co)", "Third-party, client-submitted star ratings, review counts, pricing, team size, founding year, location, and client-feedback summaries.", "Displayed on review pages and the top-100 list as clearly attributed third-party context. Never used as our own rating or marked up as our aggregateRating."),
     ]
     rows = "".join(
         f'<tr><th scope="row">{e(name)}</th><td>{e(prov)}</td><td>{e(use)}</td></tr>'
@@ -1134,8 +1306,15 @@ def build_sources():
     body = f"""<h1>Sources and Citations</h1>
 <p class="lead">This page lists the data sources we use to score and review SEO agencies, and how each one is used.</p>
 
-<div class="callout"><strong>Review collection method.</strong> All ratings on this site are editorial — the
-publisher's assessment. We do not collect or publish user-submitted ratings, review counts, or testimonials.</div>
+<div class="callout"><strong>Two kinds of rating, kept separate.</strong> Our own <strong>editorial score</strong>
+(0–10) is the publisher's assessment; we do not collect user ratings ourselves. Separately, we display each
+agency's <strong>Clutch rating</strong> — a third-party star rating submitted by that agency's clients on
+<a href="https://clutch.co/" rel="nofollow noopener" target="_blank">Clutch</a> — as clearly attributed context.
+The two are never conflated, and Clutch ratings are never marked up as our own structured-data rating.</div>
+
+<div class="callout"><strong>About Clutch data.</strong> Clutch figures shown on this site were collected from public
+Clutch profiles and reflect a snapshot in time; current numbers may differ. Some agencies have no Clutch profile, in
+which case no Clutch rating is shown. Last collected {U}.</div>
 
 <section><h2>Data sources</h2>
 <div class="table-scroll"><table>
@@ -1280,6 +1459,14 @@ def main():
     build_reviews_index()
     for a in B.AGENCIES:
         build_review(a)
+    # Promote provisional directory agencies that have Clutch data to full pages.
+    score_by_name = {x["name"]: x["score"] for x in top100()}
+    promoted = 0
+    for name, focus, region in DIRECTORY:
+        if cdata(name):
+            build_directory_review(name, focus, region, score_by_name.get(name))
+            promoted += 1
+    print(f"Promoted {promoted} directory agencies to Clutch-sourced review pages.")
     build_best_index()
     for c in B.CATEGORIES:
         build_category(c)
