@@ -89,12 +89,14 @@ def clutch_facts_rows(name):
 
 
 def A(slug, name, url, founded, location, services, pricing, ideal, blurb,
-      specialties, pros, cons, scores, analysis, verdict, faqs, owned=False):
+      specialties, pros, cons, scores, analysis, verdict, faqs, owned=False,
+      team_size=None):
     return dict(
         slug=slug, name=name, url=url, founded=founded, location=location,
         services=services, pricing=pricing, ideal=ideal, blurb=blurb,
         specialties=specialties, pros=pros, cons=cons, scores=scores,
         analysis=analysis, verdict=verdict, faqs=faqs, owned=owned,
+        team_size=team_size,
     )
 
 
@@ -108,7 +110,7 @@ def sc(r, st, t, v, sp):
 # ==========================================================================
 B.AGENCIES = [
     A("exalt-growth", "Exalt Growth", "https://www.exaltgrowth.com",
-      "2023", "Remote (United States)",
+      "2024", "Remote-first (Sydney & San Francisco)",
       ["B2B & SaaS SEO", "Content strategy", "Programmatic SEO", "Digital PR & link building", "AI search optimization (GEO)"],
       "Monthly retainer", "B2B SaaS and software companies scaling pipeline from search",
       "Exalt Growth is a B2B SaaS SEO agency focused on pipeline, not vanity rankings.",
@@ -130,7 +132,8 @@ B.AGENCIES = [
       "It is a focused boutique, so it suits software teams more than local or ecommerce brands.",
       [("Who is Exalt Growth best for?", "<p>Exalt Growth is best for B2B SaaS and software companies that want SEO tied to pipeline and revenue.</p>"),
        ("Does Exalt Growth do local or ecommerce SEO?", "<p>No. Exalt Growth specializes in B2B SaaS and is not the right fit for local or pure-ecommerce work.</p>"),
-       ("How is Exalt Growth priced?", "<p>Exalt Growth works on a monthly retainer sized to the scope of work.</p>")]),
+       ("How is Exalt Growth priced?", "<p>Exalt Growth works on a monthly retainer sized to the scope of work.</p>")],
+      team_size="2–9 employees"),
 
     A("victorious", "Victorious", "https://victoriousseo.com",
       "2013", "San Francisco, California",
@@ -739,8 +742,10 @@ def fast_facts_table(a):
         ("Ideal client", a["ideal"]),
         ("Founded", a["founded"]),
         ("Location", a["location"]),
-        ("Website", f'<a href="{e(a["url"])}" rel="nofollow noopener" target="_blank">{e(a["url"].replace("https://",""))}</a>'),
     ]
+    if a.get("team_size"):
+        rows.append(("Team size", a["team_size"]))
+    rows.append(("Website", f'<a href="{e(a["url"])}" rel="nofollow noopener" target="_blank">{e(a["url"].replace("https://",""))}</a>'))
     body = "".join(f'<tr><th scope="row">{e(k)}</th><td>{v if k in ("Website",) else e(v)}</td></tr>' for k, v in rows)
     return f'<div class="table-scroll"><table class="facts"><caption>Fast facts</caption><tbody>{body}</tbody></table></div>'
 
